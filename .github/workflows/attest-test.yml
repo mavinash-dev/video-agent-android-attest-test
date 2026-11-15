@@ -39,7 +39,8 @@ jobs:
           cd "$RUNNER_TEMP/release"
           for f in $(ls | sort); do
             printf '{"name":"%s","size":%s,"sha256":"%s"}\n' "$f" "$(stat -c %s "$f")" "$(sha256sum "$f" | cut -d' ' -f1)"
-          done | jq -s --arg v "$VERSION" --arg c "$COMMIT" '{version:$v,commit:$c,files:.}' > manifest.json
+          done | jq -s --arg v "$VERSION" --arg c "$COMMIT" '{version:$v,commit:$c,files:.}' > "$RUNNER_TEMP/manifest.json"
+          mv "$RUNNER_TEMP/manifest.json" manifest.json
           cat manifest.json
           ls -l
 
