@@ -26,9 +26,6 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Build release files
-        run: ./gradlew --no-daemon publishToMavenLocal -Dmaven.repo.local="$RUNNER_TEMP/m2"
-
       - name: Read version
         id: version
         run: |
@@ -87,7 +84,7 @@ jobs:
           cd release
           sha256sum -c SHA256SUMS
           for f in *; do
-            gh attestation verify "$f" --repo "$GITHUB_REPOSITORY" --signer-workflow "$GITHUB_REPOSITORY/.github/workflows/publish.yml"
+            gh attestation verify "$f" --repo "$GITHUB_REPOSITORY" --signer-workflow "$GITHUB_REPOSITORY/.github/workflows/publish-test.yml"
           done
 
       - name: Create Release and Tag
