@@ -1,3 +1,9 @@
+## [5.0.4](https://github.com/newrelic/video-agent-android/compare/v5.0.3...v5.0.4) (2026-11-17)
+
+### Changed
+
+- Test release with the tag ruleset on.
+
 ## [5.0.3](https://github.com/newrelic/video-agent-android/compare/v5.0.2...v5.0.3) (2026-11-17)
 
 ### Changed
