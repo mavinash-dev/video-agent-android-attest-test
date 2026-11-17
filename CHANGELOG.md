@@ -1,3 +1,9 @@
+## [5.0.5](https://github.com/newrelic/video-agent-android/compare/v5.0.4...v5.0.5) (2026-11-17)
+
+### Changed
+
+- Test release: creation rule off, environment approval on.
+
 ## [5.0.4](https://github.com/newrelic/video-agent-android/compare/v5.0.3...v5.0.4) (2026-11-17)
 
 ### Changed
