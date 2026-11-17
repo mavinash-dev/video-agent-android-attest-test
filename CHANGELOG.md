@@ -1,3 +1,9 @@
+## [5.0.3](https://github.com/newrelic/video-agent-android/compare/v5.0.2...v5.0.3) (2026-11-17)
+
+### Changed
+
+- Test release for the attestation fixes.
+
 ## [5.0.2](https://github.com/newrelic/video-agent-android/compare/v5.0.1...v5.0.2) (2026-10-14)
 
 ### Bug fixes
